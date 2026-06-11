@@ -1,18 +1,29 @@
-hands-game/
-├── .gitignore               # Excludes virtual envs, node_modules, and cache files
-├── README.md                # Documentation guide
-├── server.py                # Python MediaPipe WebSocket server backend
-├── hand_landmarker.task    # Pre-trained Google MediaPipe gesture model bundle
-└── frontend/                # React Vite client environment
-    ├── package.json
-    ├── src/
-    │   ├── Game.jsx         # Main arcade game engine component
-    │   └── main.jsx
-    └── public/
-        └── audios/          # Game audio asset folder
-            ├── none.m4a     # Audio clip for "no hand"
-            ├── both.m4a     # Audio clip for "raise hands"
-            ├── left.m4a     # Audio clip for "left hand"
-            ├── right.m4a    # Audio clip for "right hand"
-            ├── fail.mp3     # Triggered on timeout/game over
-            └── winner.mp3   # Triggered immediately on achieving a score of 100
+HANDS-GAME/
+├── backend/
+│   ├── __pycache__/
+│   ├── detector.py
+│   ├── engine.py
+│   ├── hand_landmarker.task
+│   └── server.py
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── Game.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   └── vite.config.js
+├── venv/
+├── .gitignore
+├── hand_landmarker.task
+├── README.md
+└── structure.txt
