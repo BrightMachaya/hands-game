@@ -1,12 +1,10 @@
-HANDS-GAME/
+hands-game/
 ├── backend/
-│   ├── __pycache__/
 │   ├── detector.py
 │   ├── engine.py
 │   ├── hand_landmarker.task
 │   └── server.py
 ├── frontend/
-│   ├── node_modules/
 │   ├── public/
 │   │   ├── audios/
 │   │   │   ├── both.m4a
