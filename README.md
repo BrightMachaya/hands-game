@@ -12,6 +12,38 @@ An interactive, real-time computer vision arcade game built using a **Python asy
 - **Immersive Arcade Audio:** Features custom verbal cues for commands, a dedicated failure theme (`fail.mp3`), and an absolute victory anthem (`winner.mp3`) that plays unconditionally across all game configurations.
 - **Fail-Safe UI Sync:** Synchronous state locking prevents asynchronous network race conditions from cutting off victory/defeat sequences or leaving zombie warning banners on the screen.
 
+## 🛠️ Installation & Getting Started
+Follow these step-by-step instructions to set up your local environment and launch the game.
+
+1. Prerequisites
+Ensure you have the following global runtimes installed on your system:
+Python (Version 3.9, 3.10, or 3.11) (Note: MediaPipe does not currently support Python 3.12+)
+Node.js (v18 or higher) & npm
+
+2. Backend Setup (Python Server)
+Open your terminal at the root project folder (hands-game/) and initialize the vision pipeline:
+
+```Bash
+pip install opencv-python mediapipe websockets 
+
+cd backend
+python server.py
+The vision tracking system will spin up and listen for camera frame incoming streams on ws://127.0.0.1:8765.
+
+Frontend Setup (React Application)
+Open a second, separate terminal window, navigate to the frontend/ directory, and launch the user interface:
+Navigate to the frontend folder:
+
+cd frontend
+Install project node modules:
+
+npm install
+Launch the local development web server:
+
+npm run dev
+Play the Game: Click the local network link generated in your terminal (usually http://localhost:5173) to launch the user interface in your web browser.
+```
+
 ## 🎮 Gameplay Instructions & Game Conditions
 
 This section outlines how to interact with the game, how scoring works, and the underlying conditions that govern winning, losing, and adaptive difficulty.
