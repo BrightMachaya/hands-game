@@ -1,0 +1,54 @@
+# ====================================================================
+# OS & System Trash
+# ====================================================================
+.DS_Store
+Thumbs.db
+*.log
+
+# ====================================================================
+# IDEs and Text Editors
+# ====================================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ====================================================================
+# Python Backend Environment & Caches
+# ====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.python-version
+
+# Virtual Environments (Never upload these!)
+venv/
+.venv/
+ENV/
+env/
+
+# Backend local configuration/secrets
+.env
+
+# ====================================================================
+# React Frontend (Node.js) Dependencies & Production Builds
+# ====================================================================
+# Locks dependencies from being pushed
+node_modules/
+frontend/node_modules/
+
+# Blocks compiled distribution targets
+frontend/dist/
+frontend/build/
+
+# Frontend diagnostic logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend environment credential files
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
